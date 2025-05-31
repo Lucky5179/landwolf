@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LANDWOLF</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        background-color: #000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20241222132708" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__left">
+            <div class="header__menu menu">
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
+              </button>
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" data-goto=".about" class="menu__link">About</a>
+                  </li>
+                  <li class="menu__item menu__item--decor">
+                    <img src="img/menu-decor.svg" alt="Decor Item" />
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-goto=".how-content"
+                      data-goto-top="60"
+                      class="menu__link"
+                      >How to buy</a
+                    >
+                  </li>
+                  <li class="menu__item menu__item--decor">
+                    <img src="img/menu-decor.svg" alt="Decor Item" />
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".tokenomics" class="menu__link"
+                      >Tokenomics</a
+                    >
+                  </li>
+                  <li class="menu__item menu__item--decor">
+                    <img src="img/menu-decor.svg" alt="Decor Item" />
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" data-goto=".gallery" class="menu__link"
+                      >Gallery</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <a href="../" class="header__logo"
+            ><img src="img/logo.png" alt="LANDWOLF" />
+          </a>
+          <div class="header__right" data-da=".menu__body, 767.98">
+            <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon" class="header__button"
+              >Buy landWolf</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__bg">
+            <img src="img/hero/bg.png" alt="BG" />
+          </div>
+          <div class="hero__decor">
+            <div class="hero__decor-layer hero__decor-layer1">
+              <img src="img/hero/layer1.png" alt="Image" />
+              <img src="img/hero/layer2.png" alt="Image" />
+            </div>
+            <div class="hero__decor-layer hero__decor-layer2">
+              <img src="img/hero/layer3.png" alt="Image" />
+            </div>
+            <div class="hero__decor-layer hero__decor-layer3">
+              <img src="img/hero/layer4.png" alt="Image" />
+            </div>
+            <div class="hero__decor-layer hero__decor-layer4">
+              <img src="img/hero/layer5.png" alt="Image" />
+            </div>
+            <div class="hero__decor-layer hero__decor-layer5">
+              <img src="img/hero/layer6.png" alt="Image" />
+            </div>
+          </div>
+          <div class="hero__container">
+            <h1 class="hero__title">
+              <img src="img/hero/title.png" alt="LANDWOLF" />
+            </h1>
+            <div class="hero__actions">
+              <div class="hero__social">
+                <h3>Sup Folks</h3>
+                <ul>
+                  <li>
+                    <a href="https://t.me/landwolfbymatt" target="_blank">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M39.5572 8.85993C40.0515 8.65191 40.5924 8.58017 41.1238 8.65216C41.6552 8.72416 42.1575 8.93727 42.5786 9.2693C42.9997 9.60133 43.324 10.0402 43.518 10.5401C43.7119 11.04 43.7683 11.5828 43.6812 12.1119L39.1452 39.6259C38.7052 42.2799 35.7932 43.8019 33.3592 42.4799C31.3232 41.3739 28.2992 39.6699 25.5792 37.8919C24.2192 37.0019 20.0532 34.1519 20.5652 32.1239C21.0052 30.3899 28.0052 23.8739 32.0052 19.9999C33.5752 18.4779 32.8592 17.5999 31.0052 18.9999C26.4012 22.4759 19.0092 27.7619 16.5652 29.2499C14.4092 30.5619 13.2852 30.7859 11.9412 30.5619C9.48921 30.1539 7.21521 29.5219 5.35921 28.7519C2.85121 27.7119 2.97321 24.2639 5.35721 23.2599L39.5572 8.85993Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/landwolfmemeeth" target="_blank">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M35.8906 8.2832L42.2166 8.2832L28.3979 22.9663L44.6563 42.9499L31.9277 42.9499L21.9511 30.8324L10.5484 42.9499L4.21652 42.9499L18.9958 27.2395L3.40625 8.28594L16.4589 8.28594L25.4632 19.3597L35.8906 8.2832ZM33.6661 39.4307L37.1723 39.4307L14.5437 11.6193L10.7841 11.6193L33.6661 39.4307Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon" class="hero__button"
+                >Buy landWolf</a
+              >
+            </div>
+            <div class="hero__main-image">
+              <img src="img/hero/hero.png" alt="LANDWOLF" />
+            </div>
+            <div class="hero__labels">
+              <span>the freakin’ alpha</span>
+              <span>landwooolf Baby!</span>
+            </div>
+            <div class="hero__content">
+              <div class="hero__content-text">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Half man, half wolf. LANDWOLF, a Matt Furie creation unlike
+                  any that came before. He’s just a cool dude who loves to hang
+                  out with his friends, eat pizza, and play video games. Watch
+                  out for the full moon: that’s when Landwolf transforms into a
+                  party animal, roaming the streets looking for adventure.
+                </p>
+              </div>
+              <div class="hero__content-image">
+                <img src="img/hero/leaf.svg" alt="Leaf" />
+              </div>
+              <div class="hero__content-text right">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  As Matt continued to draw Landwolf, he realized that this
+                  character was truly something special. He is featured on the
+                  first page of the iconic comic series, “The Boy’s Club,”
+                  alongside the other memorable characters Pepe, Andy, and
+                  Brett.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__how how">
+          <div class="how__parallax-box">
+            <div class="how__sun">
+              <img src="img/how/sun.png" alt="Sun" />
+            </div>
+            <div class="how__cloud-back">
+              <img src="img/how/back-cloud.png" alt="Cloud" />
+            </div>
+            <div class="how__title">
+              <img src="img/how/title.png" alt="How To Buy Wolf" />
+            </div>
+            <div class="how__labels pl-func pr-func">
+              <div class="how__label">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Pick the sh*t you <br />
+                  want—don’t overthink it
+                </p>
+              </div>
+              <div class="how__label right">
+                <p>
+                  Smash that “buy” button <br />
+                  like it owes you money.
+                </p>
+              </div>
+            </div>
+            <div class="how__clouds-front">
+              <img src="img/how/clouds.png" alt="Clouds" />
+            </div>
+            <div class="how__main-back">
+              <img src="img/how/back.png" alt="BG" />
+            </div>
+            <div class="how__main-mid">
+              <img src="img/how/mid.png" alt="BG" />
+            </div>
+            <div class="how__main-wolf">
+              <img src="img/how/wolf.png" alt="Wolf" />
+            </div>
+            <div class="how__main-front">
+              <img src="img/how/front.png" alt="Front" />
+            </div>
+          </div>
+        </section>
+        <section class="page__how-content how-content">
+          <div class="how-content__container">
+            <div class="how-content__bottom-content">
+              <div class="how-content__steps">
+                <article class="how-content__step">
+                  <div class="how-content__step-header">
+                    <span>Install a Crypto Wallet</span>
+                    <img src="img/how/s1.svg" alt="step1" />
+                  </div>
+                  <div class="how-content__step-text">
+                    Download MetaMask or another trusted wallet to manage your
+                    crypto assets securely and easily.
+                  </div>
+                </article>
+                <article class="how-content__step">
+                  <div class="how-content__step-header">
+                    <span>Purchase ETH</span>
+                    <img src="img/how/s2.svg" alt="step2" />
+                  </div>
+                  <div class="how-content__step-text">
+                    Purchase Ethereum (ETH) from a trusted cryptocurrency
+                    exchange, which you can then use to exchange for WOLF tokens
+                    through a supported platform or decentralized exchange.
+                  </div>
+                </article>
+                <article class="how-content__step">
+                  <div class="how-content__step-header">
+                    <span>Connect to Uniswap</span>
+                    <img src="img/how/s3.svg" alt="step3" />
+                  </div>
+                  <div class="how-content__step-text">
+                    Once your wallet is successfully linked, search for the WOLF
+                    token in the list of available options or paste its contract
+                    address to ensure you're selecting the correct token.
+                  </div>
+                </article>
+                <article class="how-content__step">
+                  <div class="how-content__step-header">
+                    <span>Swap ETH for WOLF</span>
+                    <img src="img/how/s4.svg" alt="step4" />
+                  </div>
+                  <div class="how-content__step-text">
+                    Complete the transaction to receive your WOLF tokens.
+                  </div>
+                </article>
+              </div>
+              <!-- <div class="how-content__listings">
+                <h3 class="how-content__listings-title">Landwolf Listings</h3>
+                <div class="how-content__listings-items">
+                  <a
+                    href="https://poloniex.com/trade/LWOLF_USDT/?type=spot"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/01.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.mexc.com/exchange/LWOLF_USDT?_from=search_spot_trade"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/02.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.gate.io/trade/WOLF_USDT"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/03.png" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.bitmart.com/trade/en-US?symbol=LWOLF_USDT"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/04.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://bingx.com/en/spot/WOLFUSDT/"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/05.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.xt.com/en/trade/wolf_usdt"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/06.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://ascendex.com/en/cashtrade-spottrading/usdt/wolf"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/07.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.bitget.com/spot/WOLFUSDT?type=spot"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/08.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.kcex.com/exchange/WOLF_USDT?_from=search_spot_trade"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/09.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://hibt.com/trade?symbol=WOLF_USDT"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/10.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.lbank.com/trade/lwolf_usdt"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/11.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://www.probit.com/app/exchange/WOLF-USDT"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/12.svg" alt="Logo" />
+                  </a>
+                  <a
+                    href="https://bilaxy.com/ethereum/0x67466BE17df832165F8C80a5A120CCc652bD7E69"
+                    target="_blank"
+                    class="how-content__listings-item"
+                  >
+                    <img src="img/how/listings/13.svg" alt="Logo" />
+                  </a>
+                </div>
+                <a
+                  href="https://app.uniswap.org/"
+                  target="_blank"
+                  class="how-content__listings-button"
+                >
+                  Buy Wolf on Uniswap
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </section>
+        <section class="page__about about">
+          <div class="about__box">
+            <div class="about__box-city">
+              <img loading="lazy" src="img/about/city.png" alt="LANDWOLF" />
+            </div>
+            <div class="about__box-mid">
+              <img loading="lazy" src="img/about/mid.png" alt="LANDWOLF" />
+            </div>
+            <div class="about__box-content-box">
+              <div class="about__box-content">
+                <div class="about__box-content-label">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 9.33978L1.10236 5.8011L7.49606 8.00553L9.48032 9.51381L8.8189 7.07735V0H12.2913V7.07735L11.5748 9.57182L13.5039 8.06354L19.9528 5.91713L21 9.39779L14.6063 11.6022L12.2362 11.7182L14.1102 13.1105L18.0236 18.8536L15.2126 21L11.2441 15.3149L10.4724 12.9365L9.64567 15.2569L5.67717 21L2.86614 18.8536L6.83465 13.1105L8.76378 11.6602L6.44882 11.5442L0 9.33978Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span>About Landwolf</span>
+                </div>
+                <div class="about__box-content-title">
+                  <img
+                    class="about__box-content-title-image-1"
+                    src="img/about/t1.png"
+                    alt="THE"
+                  />
+                  <img
+                    class="about__box-content-title-image-2"
+                    src="img/about/t2.png"
+                    alt="FREAKING"
+                  />
+                  <img
+                    class="about__box-content-title-image-3"
+                    src="img/about/t3.png"
+                    alt="ALPHA"
+                  />
+                  <img
+                    class="about__box-content-title-image-4"
+                    src="img/about/t4.png"
+                    alt="OF BOYS"
+                  />
+                  <img
+                    class="about__box-content-title-image-5"
+                    src="img/about/t5.png"
+                    alt="CLUB"
+                  />
+                </div>
+                <div class="about__box-content-text">
+                  <p>
+                    Yo... Pepe, Andy, Brett? Those guys? Legends, man. We’re
+                    tight. But me? I’m L-Landwolf, baby!! Half man... half
+                    wolf... all party. I mean, I’m the BEST—pizza, video games,
+                    full moon, PARTY—BOOM! That’s how we roll together.
+                  </p>
+                  <span> Yeahhh! </span>
+                </div>
+              </div>
+            </div>
+            <div class="about__box-wall">
+              <img loading="lazy" src="img/about/Wall.png" alt="LANDWOLF" />
+            </div>
+            <div class="about__box-road">
+              <img loading="lazy" src="img/about/Road.png" alt="LANDWOLF" />
+            </div>
+            <div class="about__box-hero">
+              <img src="img/about/wolf/1-min.png" alt="LANDWOLF" />
+            </div>
+          </div>
+        </section>
+        <section class="page__tokenomics tokenomics">
+          <div class="tokenomics__bg">
+            <img loading="lazy" src="img/tokenomics/bg111.png" alt="BG" />
+          </div>
+          <div class="tokenomics__container">
+            <h2 class="tokenomics__title">
+              <img src="img/tokenomics/title.png" alt="TOKENOMICS" />
+            </h2>
+            <div class="tokenomics__body-box">
+              <div class="tokenomics__body">
+                <div class="tokenomics__basket">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Basket.png"
+                    alt="Basket"
+                  />
+                </div>
+                <div class="tokenomics__weed">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Weed.png"
+                    alt="Basket"
+                  />
+                </div>
+                <div class="tokenomics__bong">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Bong.png"
+                    alt="Bong"
+                  />
+                </div>
+                <div class="tokenomics__condom">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Condom.png"
+                    alt="Condom"
+                  />
+                </div>
+                <div class="tokenomics__aubergine">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/aubergine.png"
+                    alt="Aubergine"
+                  />
+                </div>
+                <div class="tokenomics__grab-your">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/GrabLabel.png"
+                    alt="Grab Your"
+                  />
+                </div>
+                <div class="tokenomics__favorite">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/FavoriteLabel.png"
+                    alt="Favorite"
+                  />
+                </div>
+                <div class="tokenomics__heckout">
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Checkout.png"
+                    alt="Checkout"
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/tokenomics/Label.png"
+                    alt="Label"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__gallery gallery">
+          <div class="gallery__container">
+            <h2 class="gallery__title">
+              <div class="gallery__title-label">
+                <div class="gallery__title-label-stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="gallery__title-label-text">
+                  Pure badass art <br />
+                  inspired by the legend himself
+                </p>
+              </div>
+              <div class="gallery__title-image">
+                <img src="img/gallery/title.png" alt="Gallery" />
+              </div>
+              <div class="gallery__title-label right">
+                <div class="gallery__title-label-stars">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="9"
+                    viewBox="0 0 9 9"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 4.00276L0.472441 2.48619L3.2126 3.43094L4.06299 4.07735L3.77953 3.03315V0H5.26772V3.03315L4.96063 4.10221L5.7874 3.4558L8.55118 2.53591L9 4.02762L6.25984 4.97238L5.24409 5.0221L6.04724 5.61879L7.72441 8.08011L6.51968 9L4.8189 6.56354L4.48819 5.5442L4.13386 6.53867L2.43307 9L1.22835 8.08011L2.92913 5.61879L3.75591 4.99724L2.76378 4.94751L0 4.00276Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p class="gallery__title-label-text">
+                  Get in here and see <br />
+                  what all the howl’s about!
+                </p>
+              </div>
+            </h2>
+          </div>
+          <div class="gallery__rows">
+            <div class="gallery__row">
+              <div class="gallery__row-half to-left">
+                <div class="gallery__item">
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/02.jpg" alt="Image" />
+                  <img src="img/gallery/02.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/03.jpg" alt="Image" />
+                  <img src="img/gallery/03.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/04.jpg" alt="Image" />
+                  <img src="img/gallery/04.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/05.jpg" alt="Image" />
+                  <img src="img/gallery/05.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/06.jpg" alt="Image" />
+                  <img src="img/gallery/06.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/07.jpg" alt="Image" />
+                  <img src="img/gallery/07.jpg" alt="Image" />
+                </div>
+              </div>
+              <div class="gallery__row-half to-left">
+                <div class="gallery__item">
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/02.jpg" alt="Image" />
+                  <img src="img/gallery/02.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/03.jpg" alt="Image" />
+                  <img src="img/gallery/03.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/04.jpg" alt="Image" />
+                  <img src="img/gallery/04.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/05.jpg" alt="Image" />
+                  <img src="img/gallery/05.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/06.jpg" alt="Image" />
+                  <img src="img/gallery/06.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/07.jpg" alt="Image" />
+                  <img src="img/gallery/07.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+            <div class="gallery__row">
+              <div class="gallery__row-half to-right">
+                <div class="gallery__item">
+                  <img src="img/gallery/08.jpg" alt="Image" />
+                  <img src="img/gallery/08.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/09.jpg" alt="Image" />
+                  <img src="img/gallery/09.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/10.jpg" alt="Image" />
+                  <img src="img/gallery/10.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/11.jpg" alt="Image" />
+                  <img src="img/gallery/11.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/12.jpg" alt="Image" />
+                  <img src="img/gallery/12.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/13.jpg" alt="Image" />
+                  <img src="img/gallery/13.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                </div>
+              </div>
+              <div class="gallery__row-half to-right">
+                <div class="gallery__item">
+                  <img src="img/gallery/08.jpg" alt="Image" />
+                  <img src="img/gallery/08.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/09.jpg" alt="Image" />
+                  <img src="img/gallery/09.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/10.jpg" alt="Image" />
+                  <img src="img/gallery/10.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/11.jpg" alt="Image" />
+                  <img src="img/gallery/11.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/12.jpg" alt="Image" />
+                  <img src="img/gallery/12.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/13.jpg" alt="Image" />
+                  <img src="img/gallery/13.jpg" alt="Image" />
+                </div>
+                <div class="gallery__item">
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                  <img src="img/gallery/01.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container">
+            <div class="gallery__bottom">
+              <div class="gallery__bottom-image">
+                <img src="img/gallery/logo.png" alt="Logo" />
+              </div>
+              <div class="gallery__bottom-text">
+                Yo, welcome to the Landwolf Custom Art Gallery—where sh*t gets
+                wild! High-quality, exclusive art inspired by yours truly,
+                straight from the mind of our kickass wolf artist. Dive in and
+                feast your eyes on the coolest stuff you’ve ever seen. Let’s
+                howl about it!
+              </div>
+              <div class="gallery__bottom-social">
+                <a
+                  href="https://t.me/landwolfbymatt"
+                  target="_blank"
+                  class="gallery__bottom-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.5188 4.84891C20.766 4.7449 21.0364 4.70903 21.3021 4.74503C21.5678 4.78103 21.819 4.88758 22.0295 5.0536C22.2401 5.21961 22.4023 5.43902 22.4992 5.68899C22.5962 5.93896 22.6244 6.21035 22.5808 6.47491L20.3128 20.2319C20.0928 21.5589 18.6368 22.3199 17.4198 21.6589C16.4018 21.1059 14.8898 20.2539 13.5298 19.3649C12.8498 18.9199 10.7668 17.4949 11.0228 16.4809C11.2428 15.6139 14.7428 12.3559 16.7428 10.4189C17.5278 9.65791 17.1698 9.21891 16.2428 9.91891C13.9408 11.6569 10.2448 14.2999 9.02284 15.0439C7.94484 15.6999 7.38284 15.8119 6.71084 15.6999C5.48484 15.4959 4.34784 15.1799 3.41984 14.7949C2.16584 14.2749 2.22684 12.5509 3.41884 12.0489L20.5188 4.84891Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://x.com/landwolfmemeeth"
+                  target="_blank"
+                  class="gallery__bottom-social-item"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.6855 4.56055L21.8485 4.56055L14.9392 11.9021L23.0684 21.8939L16.7041 21.8939L11.7158 15.8351L6.01443 21.8939L2.84849 21.8939L10.2381 14.0387L2.44336 4.56191L8.9697 4.56191L13.4718 10.0988L18.6855 4.56055ZM17.5733 20.1343L19.3264 20.1343L8.01211 6.22858L6.13229 6.22858L17.5733 20.1343Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__join join">
+          <div class="join__bg">
+            <img class="join__bg-im1" src="img/join/BG.png" alt="BG" />
+            <img class="join__bg-im2" src="img/join/BG.png" alt="BG" />
+            <img src="img/join/bgDec.svg" alt="Decor" />
+          </div>
+          <div class="join__container">
+            <!-- <div class="join__top">
+              <span>2024 © landwolf</span>
+              <span>2024 © landwolf</span>
+              <span>2024 © landwolf</span>
+            </div> -->
+            <div class="join__main">
+              <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon" class="join__buy">Buy now</a>
+              <div class="join__image">
+                <img loading="lazy" src="img/join/PhoneImage.png" alt="Image" />
+              </div>
+              <div class="join__social">
+                <a
+                  href="https://t.me/landwolfbymatt"
+                  target="_blank "
+                  class="join__social-item"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.0188 5.37332C20.266 5.26932 20.5364 5.23344 20.8021 5.26944C21.0678 5.30544 21.319 5.41199 21.5295 5.57801C21.7401 5.74403 21.9023 5.96344 21.9992 6.21341C22.0962 6.46338 22.1244 6.73476 22.0808 6.99932L19.8128 20.7563C19.5928 22.0833 18.1368 22.8443 16.9198 22.1833C15.9018 21.6303 14.3898 20.7783 13.0298 19.8893C12.3498 19.4443 10.2668 18.0193 10.5228 17.0053C10.7428 16.1383 14.2428 12.8803 16.2428 10.9433C17.0278 10.1823 16.6698 9.74332 15.7428 10.4433C13.4408 12.1813 9.74484 14.8243 8.52284 15.5683C7.44484 16.2243 6.88284 16.3363 6.21084 16.2243C4.98484 16.0203 3.84784 15.7043 2.91984 15.3193C1.66584 14.7993 1.72684 13.0753 2.91884 12.5733L20.0188 5.37332Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://x.com/landwolfmemeeth"
+                  target="_blank "
+                  class="join__social-item"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.1855 5.08496H21.3485L14.4392 12.4265L22.5684 22.4183H16.2041L11.2158 16.3596L5.51443 22.4183H2.34849L9.73814 14.5631L1.94336 5.08633H8.4697L12.9718 10.6232L18.1855 5.08496ZM17.0733 20.6587H18.8264L7.51211 6.75299H5.63229L17.0733 20.6587Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="join__line">
+            <div class="join__line-row">
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+            </div>
+            <div class="join__line-row">
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+              <div class="join__line-item">*</div>
+              <div class="join__line-item">
+                Want to roll with the legend Landwolf? Call now: (555) 123-4567
+                and join the pack!
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container">
+            <div class="footer__top-body">
+              <div class="footer__top-land">
+                <img src="img/footer/Land.svg" alt="LAND" />
+              </div>
+              <div class="footer__top-right">
+                <span class="footer__top-right-num">N56/76</span>
+                <div class="footer__top-right-ca">
+                  <button
+                    type="button"
+                    class="footer__top-right-ca-body copy-ca-btn"
+                  >
+                    Ca:<span id="ca-value"
+                      >0xcomingsoon</span
+                    >
+                  </button>
+                  <div class="footer__top-right-ca-image">
+                    <img src="img/footer/ca.svg" alt="Image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__mid">
+          <div class="footer__container">
+            <div class="footer__mid-body">
+              <div class="footer__mid-left">
+                <div class="footer__mid-left-top">
+                  <img src="img/footer/IconsLeft.svg" alt="Icons" />
+                  <span
+                    >Landwolf’s a goddamn legend, and you better f*ckin’
+                    remember it.</span
+                  >
+                  <img src="img/footer/IconsRight.svg" alt="Icons" />
+                </div>
+                <div class="footer__mid-left-mid">
+                  <img src="img/footer/Divider.svg" alt="Image" />
+                </div>
+                <div class="footer__mid-left-bottom">
+                  <div class="footer__mid-left-menu">
+                    <div class="footer__mid-left-menu-column">
+                      <a
+                        href="#"
+                        data-goto=".hero"
+                        class="footer__mid-left-menu-item"
+                        >Home</a
+                      >
+                      <a
+                        href="#"
+                        data-goto=".about"
+                        class="footer__mid-left-menu-item"
+                        >About</a
+                      >
+                      <a
+                        href="#"
+                        data-goto=".how-content"
+                        data-goto-top="60"
+                        class="footer__mid-left-menu-item"
+                        >How to buy</a
+                      >
+                      <a
+                        href="#"
+                        data-goto=".gallery"
+                        class="footer__mid-left-menu-item"
+                        >Gallery</a
+                      >
+                    </div>
+                    <div class="footer__mid-left-menu-column">
+                      <a
+                        href="#"
+                        data-goto=".how-content__listings"
+                        data-goto-top="100"
+                        class="footer__mid-left-menu-item"
+                        >Listings</a
+                      >
+                      <a
+                        href="#"
+                        data-goto=".tokenomics"
+                        class="footer__mid-left-menu-item"
+                        >Tokenomics</a
+                      >
+                      <a
+                        href="https://mog.landwolf.com/"
+                        class="footer__mid-left-menu-item"
+                        >Mog me</a
+                      >
+                      <button
+                        type="button"
+                        class="footer__mid-left-menu-item copy-ca-btn"
+                      >
+                        Contract Address
+                      </button>
+                    </div>
+                    <div class="footer__mid-left-menu-column">
+                      <a
+                        href="https://x.com/landwolfmemeeth"
+                        target="_blank"
+                        class="footer__mid-left-menu-item"
+                        >X(Twitter)</a
+                      >
+                      <a
+                        href="https://t.me/landwolfbymatt"
+                        target="_blank"
+                        class="footer__mid-left-menu-item"
+                        >Telegram</a
+                      >
+                    </div>
+                  </div>
+                  <div class="footer__mid-left-num">4/20</div>
+                </div>
+              </div>
+              <div class="footer__mid-wolf">
+                <img src="img/footer/wolf.svg" alt="WOLF" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__bottom-body">
+              <span>2025 © landwolf | ALL RIGHTS RESERVED</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20241222132708"></script>
+  </body>
+</html>
